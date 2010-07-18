@@ -1,0 +1,12 @@
+Funny git proxy program
+
+Uses http://whatthecommit.com/ service to create auto message. Simply specify -am or --automessage flag on commit process.
+
+Requires libcurl instaled.
+
+Linux compilation process:
+
+1. Get libcurl installed on your system.
+2. Download source file and run g++ git++.cpp -o git++ -lcurl
+3. Place compilled git++ file in system bin folder, e.g. /usr/local/bin/
+
