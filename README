@@ -9,4 +9,5 @@ Linux compilation process:
 1. Get libcurl installed on your system.
 2. Download source file and run g++ git++.cpp -o git++ -lcurl
 3. Place compilled git++ file in system bin folder, e.g. /usr/local/bin/
+4. Usage: git commit -am
 
