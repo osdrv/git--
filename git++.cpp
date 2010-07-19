@@ -68,6 +68,7 @@ int main(int argc, char* argv[]) {
     string cmd("git");
     string response;
     string message;
+    char confirm[2];
 
     for (int i = 1; i < argc; i++) {
 
@@ -100,9 +101,14 @@ int main(int argc, char* argv[]) {
         }
     }
     
-    cout << message << "\n";
+    cout << "Automessage: " << message << "\n";
+    cout << "continue?(y/n)\n";
+    scanf("%s", confirm);
     
-    system(cmd.c_str());
+    if (!strcmp(confirm, "y")) {
+        
+        system(cmd.c_str());
+    }
     
     return 0;
 }
